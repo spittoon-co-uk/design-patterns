@@ -1,5 +1,5 @@
-import { Espresso } from "./Class/Beverage/Espresso";
-import { Mocha } from "./Class/Condiment/Mocha";
+import { Espresso } from "./Beverage/Espresso";
+import { Mocha } from "./Condiment/Mocha";
 
 let beverage1 = new Espresso;
 console.log(beverage1.getDescription(), beverage1.cost());
