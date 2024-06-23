@@ -3,12 +3,13 @@ import { CondimentDecorator } from "../Decorator/CondimentDecorator";
 
 export class Mocha extends CondimentDecorator {
     beverage: Beverage;
-    description;
+    description: string;
 
 
     constructor(beverage: Beverage) {
         super();
         this.beverage = beverage;
+        this.description = '';
     }
 
     getDescription(): string {
