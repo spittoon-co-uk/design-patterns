@@ -1,7 +1,7 @@
 import { Beverage } from "../Beverage/Beverage";
 import { CondimentDecorator } from "../Decorator/CondimentDecorator";
 
-export class Mocha extends CondimentDecorator {
+export class Soy extends CondimentDecorator {
     beverage: Beverage;
     description: string;
 
@@ -17,20 +17,20 @@ export class Mocha extends CondimentDecorator {
     }
 
     getDescription(): string {
-        return this.beverage.getDescription() + ", Mocha";
+        return this.beverage.getDescription() + ", Soy";
     }
 
     cost(): number {
         let cost = 0;
         switch (this.getSize()) {
             case "Tall":
-                cost += .10;
+                cost += .15;
                 break;
             case "Grande":
-                cost += .20;
+                cost += .25;
                 break;
             case "Venti":
-                cost += .30;
+                cost += .35;
                 break;
         }
         return cost + this.beverage.cost();
