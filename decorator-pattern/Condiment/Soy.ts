@@ -33,6 +33,6 @@ export class Soy extends CondimentDecorator {
                 cost += .35;
                 break;
         }
-        return cost + this.beverage.cost();
+        return Math.round((cost + this.beverage.cost()) * 100) / 100;
     }
 }

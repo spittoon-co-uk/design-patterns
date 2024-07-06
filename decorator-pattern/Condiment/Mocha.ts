@@ -33,6 +33,6 @@ export class Mocha extends CondimentDecorator {
                 cost += .30;
                 break;
         }
-        return cost + this.beverage.cost();
+        return Math.round((cost + this.beverage.cost()) * 100) / 100;
     }
 }
